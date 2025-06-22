@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetics Main Page</title>
+    <link rel="stylesheet" href="diabeticstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+
+<body>
+
+    <nav class="navbar"><img src="images/nutrihive.png">
+        <ul class="links-container">
+            
+            <li class="list iems"><a href="" class="links">HomePage</a></li>
+            <li class="list iems"><a href="" class="links">RecipeSection</a></li>
+            <li class="list iems"><a href="" class="links">NutriZone</a></li>
+            <li class="list iems"><a href="" class="links">HealthSphere</a></li>
+        </ul>
+
+    </nav>
+
+
+    <div class="container">
+        <section class="section" id="home">
+            <div class="textcontainer">
+                <div class="box1">
+                    <div class="leaf"><img src="images/leaf.png"></div>
+                    <h2 style="font-size: 45px;"> Diabetics can be <span
+                            style="color: #7c8902; font-style: italic;">bitter </span>
+                        <br>to deal with.
+                    </h2>
+                </div>
+
+                <div class="box2">
+
+                    <h3 style="font-size: 30px;"> Let us help
+                        <span style="color: #9a1919;font-style: italic;">sweeten</span>
+                        the journey.
+                    </h3>
+                </div>
+
+                <div class="formbox">
+                    <h4 style="font-size: 25px; margin-top: -5%; margin-left: 6%;">
+                        <mark class="scribble">
+                            Enter your blood glucose levels:
+                    </h4>
+                    </mark>
+                    <form id="glucoseForm">
+                        <input type="number" id="bslevel" name="bloodsugar" placeholder="unit: mg/dl" required>
+                        <button type="submit">Submit!</button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="leaves">
+                <img src="images/leaves.png">
+            </div>
+
+            <div class="foodcontainer">
+                <div class="box3">
+                    <div class="fruit">
+                        <img src="images/fruit.png">
+                    </div>
+                </div>
+                <div class="box4">
+                    <div class="nuts">
+                        <img src="images/nuts.png">
+                    </div>
+                </div>
+                <div class="box5">
+                    <p>Special Meal Plans!</p>
+                </div>
+                <div class="box6">
+                    <p> Exercise & Lifestyle Tips!</p>
+                </div>
+
+            </div>
+            <div id="newContent" style="margin-top: 500px; margin-left: -110px; position:absolute;"></div>
+            <div id="normalPopup" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="images/thing.png" style="width: 100px; height: 100px;">
+                    <p><b>Your glucose level is normal! <br>Visit our other pages for more nutritional tips! </b></p>
+                    <button id="redirectButton">Proceed to Home</button>
+                </div>
+            </div>
+
+            <script>
+                document.getElementById('glucoseForm').addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    var glucoseLevel = document.getElementById('bslevel').value;
+                    var newContentDiv = document.getElementById('newContent');
+                    var modal = document.getElementById('normalPopup');
+                    var redirectButton = document.getElementById('redirectButton');
+                    var span = document.getElementsByClassName("close")[0];
+                    newContentDiv.innerHTML = '';
+
+
+                    if (glucoseLevel < 70) {
+
+                        newContentDiv.innerHTML = `
+                <iframe src="lowbsl.html" width="1400px" height="2000px" frameBorder="0"></iframe>
+            `
+                            ;
+                    } else if (glucoseLevel > 70 && glucoseLevel < 120) {
+                        // Show the popup for normal glucose level
+                        modal.style.display = "block";
+                    } else {
+                        // Load content for high blood glucose (Hyperglycemia)
+                        newContentDiv.innerHTML = `
+                <iframe src="highbsl.html" width="1400px" height="2000px" frameBorder="0"></iframe>
+            `;
+                    }
+                    newContentDiv.style.border = "none";
+
+
+                    newContentDiv.classList.add('visible');
+
+                    // Scroll to the newly loaded content
+                    newContentDiv.scrollIntoView({ behavior: 'smooth' });
+                    
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    };
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    };
+
+                    // Redirect to another page when button is clicked
+                    redirectButton.onclick = function () {
+                        window.location.href = "healthtips.html"; // Redirect to the health tips page
+                    };
+                });
+                
+            </script>
+
+        </section>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,615 @@
+* {
+    font-family: 'Quicksand';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    color: rgb(44, 40, 40);
+}
+
+body {
+    height: 700px;
+    display:flex;
+    background-color: rgba(255, 255, 255, 0.438);
+    background-blend-mode: lighten;
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+}
+
+
+   
+
+.container {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 6%;
+}
+
+
+
+.box1{
+    position: absolute;
+    width: 850px;
+    height: 110px;
+    padding: 20px;
+    margin-top: 0%;
+    margin-left: 45%;
+}
+
+.box1 h3{
+   margin-top: 2%;
+    margin-left: -7%;
+}
+
+.mealbox{
+    margin-top: 50%;
+    position: absolute;
+}
+
+.diet-plan1{
+    position: absolute;
+    background-color: rgba(248, 248, 248, 0.577);
+    background-blend-mode:lighten;
+    background-image: url('images/yogurt.jpg');
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+.dbox1 img{
+    position: absolute;
+    width: 280px;
+    height: 400px;  
+    z-index: 1;
+    margin-top: -62%;
+    margin-left: 2%;
+    filter: drop-shadow(15px 15px 15px #333335b8); 
+    transition: transform 0.3s ease-in-out;   
+
+}
+
+.dbox1 img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+.diet-plan1 h2 {
+    text-decoration: underline;
+    color: #2b2a2a;
+    margin-top: 60%;
+    margin-left: 30%;
+    position: absolute;
+    font-family: 'Qwigley';
+    font-size: 40px;
+}
+
+.diet-plan1 h4 {
+    color: rgb(53, 53, 53);
+    margin-top:77%;
+    margin-left: 4%;
+    position:relative;
+
+}
+
+.diet-plan2 {
+    background-color: rgba(248, 248, 248, 0.577);
+    background-blend-mode:lighten;
+    background-image: url('images/salad.jpg');
+    border-radius: 20px;
+    margin-left: 120%;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.dbox2 img{
+    width: 250px;
+    height: 400px;
+    margin-top: -62%;
+    margin-left:7.5%; 
+    position: relative;
+    filter: drop-shadow(15px 15px 15px #333335b8); 
+    transition: transform 0.3s ease-in-out; 
+    z-index: 1;
+}
+
+.dbox2 img:hover {
+    transform:scale(1.1); 
+}
+
+.diet-plan2 h2{
+    text-decoration: underline;
+    color: #292828;
+    z-index: 2;
+    margin-top: -12%;
+    margin-left: 35%;
+    position: absolute;
+    font-family: 'Qwigley';
+    font-size: 40px;
+}
+
+.diet-plan2 h4 {
+    color: rgb(45, 44, 44);
+    margin-top: 4%;
+    margin-left: 6%;
+    position: absolute;
+    z-index: 1;
+}
+
+.cleaf{
+    width:75px;
+    height: 70px;
+    margin-top: -40%;
+    margin-left: 2%;
+    position: absolute;
+    filter: drop-shadow(15px 15px 15px #333335b8);    
+
+}
+
+.cleaf2{
+    width:75px;
+    height: 70px;
+    margin-top: -117%;
+    margin-left: 70%;
+    position: absolute;
+    filter: drop-shadow(15px 15px 15px #333335b8);    
+
+}
+
+.diet-plan3 {
+    background-color: rgba(248, 248, 248, 0.577);
+    background-blend-mode:lighten;
+    background-image: url('images/chapati.jpg');
+    background-position: 50%;
+    border-radius: 20px;
+    margin-left: 240%;
+    margin-top: -100%;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.dbox3 img{
+    width: 230px;
+    height: 250px;
+    margin-top: -40%;
+    margin-left:12%;
+    position: relative;
+    filter: drop-shadow(15px 15px 15px #333335b8); 
+    transition: transform 0.3s ease-in-out;   
+}
+
+.dbox3 img:hover {
+    transform: scale(1.1); 
+}
+
+.diet-plan3 h2{
+    text-decoration: underline;
+    color: #222121;
+    margin-top: 15%;
+    margin-left: 34%;
+    position: absolute;
+    font-family: 'Qwigley';
+    font-size: 40px;
+}
+
+.diet-plan3 h4 {
+    color: rgb(45, 44, 44);
+    margin-top: 32%;
+    margin-left: 8%;
+    position: absolute;
+   
+}
+
+.receipt{
+    margin-left: 87%;
+    margin-top: -70%;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+}
+
+.breakfastdata .carb{
+    width: 300px;
+    height: 50px;
+    background-color: #ff7a7a;
+    padding: 15px;
+    margin-top:27%;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.breakfastdata .carb h4{
+    color: black;
+    position: absolute;
+    margin-top: 0%;
+}
+
+.breakfastdata .calories{
+    width: 300px;
+    height: 50px;
+    background-color: #f8a1a1;
+    padding: 15px;
+    margin-top:47%;
+    border-radius: 30px;
+    position: absolute;
+    
+}
+
+.breakfastdata .calories h4{
+    color: black;
+    position: absolute;
+    margin-top: 0%;
+}
+
+.breakfastdata .sugar{
+    width: 300px;
+    height: 50px;
+    background-color: #f8a1a1;
+    padding: 15px;
+    margin-top:67%;
+    border-radius: 30px;
+    position: absolute;
+    
+}
+
+.breakfastdata .sugar h4{
+    color: black;
+    position: absolute;
+    margin-top: 0%;
+}
+
+
+.lunchdata .carb{
+    background-color: #fcc669;
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    margin-top:38%;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.lunchdata .carb h4{
+    color: black;
+    position: absolute;
+    margin-top: 0%;
+}
+
+.lunchdata .calories{
+    background-color: #fbd189;
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    margin-top:58%;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.lunchdata .calories h4{
+    color: black;
+    position: absolute;
+    margin-top: 0%;
+}
+
+.lunchdata .sugar{
+    background-color: #ffe2b0;
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    margin-top:78%;
+    border-radius: 30px;
+    position: absolute;
+    
+}
+
+.lunchdata .sugar h4{
+    color: black;
+    position: absolute;
+    margin-top: 0%;
+}
+
+
+.dinnerdata .carb{
+    background-color: #c1e757;
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    margin-top:66%;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.dinnerdata .carb h4{
+    color: black;
+    position: absolute;
+    margin-top: 0%;
+}
+
+.dinnerdata .calories{
+    background-color: #dcf98b;
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    margin-top:86%;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.dinnerdata .calories h4{
+    color: black;
+    position: absolute;
+    margin-top: 0%;
+}
+
+.dinnerdata .sugar{
+    background-color: #d7f18c;
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    margin-top:106%;
+    border-radius: 30px;
+    position: absolute;
+    
+}
+
+.dinnerdata .sugar h4{
+    color: black;
+    position: absolute;
+    margin-top: 0%;
+}
+
+.snackbox{
+    margin-top: 155%;
+    position: absolute;
+}
+
+.snackbox h1{
+    position: relative;
+}
+
+.snackbox h2{
+    position: relative;
+}
+
+.snackbox h3{
+    position: relative;
+    font-weight: 500;
+}
+
+
+.circle1, .circle2, .circle3, .circle4 {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+
+.circle1 {
+    width: 270px;
+    height: 270px;
+    margin-left: 140%;
+    margin-top: -70%;
+    background-color: #f88787;
+}
+
+
+.candy {
+    width: 220px;
+    height: 220px;
+    margin-left: 9%;
+    margin-top: 8%;
+    filter: drop-shadow(15px 15px 15px #333335b8);
+    position: relative;
+    transition: opacity 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+    z-index: 2; 
+}
+
+.imgtext h1 {
+    font-family: 'Qwigley';
+}
+
+.circle1:hover .middle {
+    opacity: 1; 
+}
+
+.circle1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.399); 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1; 
+}
+
+.circle1:hover::before {
+    opacity: 1;
+}
+
+.circle2 {
+    width: 270px;
+    height: 270px;
+    margin-left: 185%;
+    margin-top: -45%;
+    background-color: #f8d487;
+}
+
+.raisin {
+    width: 320px;
+    height: 320px;
+    margin-left: -9%;
+    margin-top: -10%;
+    filter: drop-shadow(15px 15px 15px #333335b8);
+    transition: opacity 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.circle2:hover .middle {
+    opacity: 1; 
+}
+
+.circle2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.399); 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1; 
+}
+
+.circle2:hover::before {
+    opacity: 1;
+}
+
+.circle3 {
+    width: 250px;
+    height: 250px;
+    margin-left: 185%;
+    margin-top: -95%;
+    background-color: #f4a865;
+}
+
+
+.carrot {
+    width: 220px;
+    height: 280px;
+    margin-left: 6%;
+    margin-top: -8%;
+    filter: drop-shadow(5px 5px 5px #333335b8);
+    transition: opacity 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.circle3:hover .middle {
+    opacity: 1; 
+}
+
+.circle3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.538); 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1; 
+}
+
+.circle3:hover::before {
+    opacity: 1;
+}
+
+.circle4 {
+    width: 250px;
+    height: 250px;
+    margin-left: 143%;
+    margin-top: -18%;
+    background-color: #f8a587;
+}
+
+.apple {
+    width: 280px;
+    height: 280px;
+    margin-left: -6%;
+    margin-top: -9%;
+    filter: drop-shadow(5px 5px 5px #333335b8);
+    transition: opacity 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.circle4:hover .middle {
+    opacity: 1; 
+}
+
+.circle4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.399); 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1; 
+}
+
+.circle4:hover::before {
+    opacity: 1;
+}
+
+.exercisebox{
+    margin-top: 2%;
+    position: relative;
+}
+.exercisebox .exerpic{
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    margin-top: 290%;
+    transition: transform 0.3s ease-in-out; 
+    z-index: 1;
+}
+
+.exerpic:hover {
+    transform:scale(1.1); 
+}
+
+.exercisebox p {
+    margin-top: 5%; 
+    font-weight: bold;
+    display: flex;
+    position:relative;
+}
+
+#myChart {
+    height: auto;
+    margin-top:-80%;
+    position: absolute;
+    margin-left: 97%;
+}
+
+@media (max-width: 768px) {
+    .exercisebox {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.drop{
+    margin-left: 115%;
+    margin-top: -100%;
+}
+
+
+
+
+
+
+
+
