@@ -6,7 +6,7 @@
     color: rgb(44, 40, 40);
 }
 
-body {
+body { 
     height: 700px;
     display:flex;
     background-color: rgba(255, 255, 255, 0.438);
