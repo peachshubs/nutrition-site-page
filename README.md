@@ -1,4 +1,4 @@
-# 🍓 NutriHive – Diabetes Section
+# 🍓 NutriHive – Diabetes & Health Checker
 
 This webpage is a design for the **"Diabetes"** section of the **NutriHive** nutritional advice website.
 
